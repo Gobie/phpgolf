@@ -26,6 +26,7 @@ $data = ''
         . '    @@@@@@@@@@@@@@@@@@@@@@@@@@        ' . "\n"
         . '        @@@@@@@@@@@@@@@@@@            ';
 
+// Not done
 // Observation: It could be described as canvas limited with ellipsis, circle and few lines.
 // ... well, that went wrong, a lot of code is needed to describe desired ellipsis.
 
