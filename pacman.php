@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ERROR);
+error_reporting(E_ALL^E_NOTICE);
 
 // always 2 bytes for <? !!!
 

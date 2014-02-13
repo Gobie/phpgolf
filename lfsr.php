@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ERROR);
+error_reporting(E_ALL^E_NOTICE);
 define('BIN', "10010000");
 
 // always 2 bytes for <? !!!
