@@ -9,6 +9,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Challenge
 {
     const ATTEMPT_FILENAME = 'attempt.php';
+    const ATTEMPT_GENERATOR_FILENAME = 'attempt_generator.php';
     const TESTS_FILENAME = 'tests.php';
 
     private $challengePath;
@@ -81,16 +82,32 @@ class Challenge
 
     private function getAttempts($attempts)
     {
+        $this->generateAttempts($attempts);
+
+        return $this->findFiles($attempts, self::ATTEMPT_FILENAME);
+    }
+
+    private function generateAttempts($attempts)
+    {
+        $attemptGeneratorFiles = $this->findFiles($attempts, self::ATTEMPT_GENERATOR_FILENAME);
+        foreach ($attemptGeneratorFiles as $attemptGeneratorFile) {
+            $attemptFile = str_replace('_generator', '', $attemptGeneratorFile);
+            file_put_contents($attemptFile, include $attemptGeneratorFile);
+        }
+    }
+
+    private function findFiles($dirs, $filename)
+    {
         $finder = new Finder();
         $finder->files()
-            ->name(self::ATTEMPT_FILENAME);
+            ->name($filename);
 
-        if (!$attempts) {
+        if (!$dirs) {
             return $finder->in($this->challengePath);
         }
 
-        foreach ($attempts as $attempt) {
-            $finder->in($this->joinPath($this->challengePath, $attempt));
+        foreach ($dirs as $dir) {
+            $finder->in($this->joinPath($this->challengePath, $dir));
         }
 
         return $finder;
