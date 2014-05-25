@@ -104,6 +104,11 @@ class Challenge
     private function verify($attemptFilePath, $testData)
     {
         $output = $this->execute($attemptFilePath, $testData['input']);
+
+        if (!empty($testData['options']['full-trim'])) {
+            $output = trim($output);
+        }
+
         if ((string)$output !== (string)$testData['output']) {
             throw new \DomainException($output);
         }
