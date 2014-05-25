@@ -12,6 +12,7 @@ Some of my tries on PHP code golf challenges.
 - [Triangular Numbers](./challenges/triangular-numbers)
 - [Upper Case First](./challenges/upper-case-first)
 - [Pacman](./challenges/pacman)
+- [Saving Time](./challenges/saving-time)
 
 # Challenge runner
 
