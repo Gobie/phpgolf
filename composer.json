@@ -1,0 +1,21 @@
+{
+  "name": "gobie/php_golf",
+  "description": "My tries on phpgolf challenges.",
+  "keywords": ["phpgolf"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michal Brašna",
+      "email": "michal.brasna@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "cilex/cilex": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gobie\\": "src/Gobie/"
+    }
+  }
+}
