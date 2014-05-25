@@ -9,6 +9,7 @@ Some of my tries on PHP code golf challenges.
 - [Minesweeper](./challenges/minesweeper)
 - [Rot 13](./challenges/rot-13)
 - [Vigenere Table](./challenges/vigenere-table)
+- [Triangular Numbers](./challenges/triangular-numbers)
 
 # Challenge runner
 
