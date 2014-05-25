@@ -1,0 +1,1 @@
+<?for($r="RZ	^PPNPLRa_[YWY[_a`db^Z	R";$c=ord($r[$i++]);)echo str_repeat($c&64?~¿:~ß,$c&62).($c&1?~õ:"");

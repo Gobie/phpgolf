@@ -11,6 +11,7 @@ Some of my tries on PHP code golf challenges.
 - [Vigenere Table](./challenges/vigenere-table)
 - [Triangular Numbers](./challenges/triangular-numbers)
 - [Upper Case First](./challenges/upper-case-first)
+- [Pacman](./challenges/pacman)
 
 # Challenge runner
 
