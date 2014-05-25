@@ -10,6 +10,7 @@ Some of my tries on PHP code golf challenges.
 - [Rot 13](./challenges/rot-13)
 - [Vigenere Table](./challenges/vigenere-table)
 - [Triangular Numbers](./challenges/triangular-numbers)
+- [Upper Case First](./challenges/upper-case-first)
 
 # Challenge runner
 
