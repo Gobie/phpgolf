@@ -2,7 +2,8 @@
 
 Some of my tries on PHP code golf challenges.
 
-- [Euler's totient](./blob/master/challenges/eulers-totient)
+- [Euler's totient](./challenges/eulers-totient)
+- [Fibonacci](./challenges/fibonacci)
 
 # Challenge runner
 
