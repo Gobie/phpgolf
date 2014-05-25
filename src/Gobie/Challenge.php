@@ -107,6 +107,8 @@ class Challenge
 
         if (!empty($testData['options']['full-trim'])) {
             $output = trim($output);
+        } else if (!empty($testData['options']['right-trim'])) {
+            $output = rtrim($output);
         }
 
         if ((string)$output !== (string)$testData['output']) {
@@ -121,15 +123,20 @@ class Challenge
             $command[] = '-d ' . escapeshellarg($key) . '=' . escapeshellarg($value);
         }
         $command[] = '--';
-        $command[] = escapeshellarg($input);
+        $command[] = escapeshellarg(base64_encode($input));
         $command[] = escapeshellarg($attemptFilePath);
+        $commandline = implode(' ', $command);
 
-        $process = new Process(implode(' ', $command));
+        $process = new Process($commandline);
         $process->setTimeout(30);
         $process->run();
 
         if (!$process->isSuccessful()) {
-            throw new \RuntimeException($process->getErrorOutput());
+            $msg = OutputInterface::VERBOSITY_VERBOSE <= $this->output->getVerbosity()
+                ? $commandline . PHP_EOL
+                : '';
+            $msg .= '[' . $process->getExitCode() . '] ' . $process->getExitCodeText() . PHP_EOL . $process->getErrorOutput();
+            throw new \RuntimeException($msg);
         }
 
         return $process->getOutput();
