@@ -5,6 +5,7 @@ Some of my tries on PHP code golf challenges.
 - [Euler's totient](./challenges/eulers-totient)
 - [Fibonacci](./challenges/fibonacci)
 - [Juggler Sequence](./challenges/juggler-sequence)
+- [LFSR](./challenges/lfsr)
 
 # Challenge runner
 
