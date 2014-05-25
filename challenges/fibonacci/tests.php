@@ -1,6 +1,7 @@
 <?php
 return array(
     'first 30 numbers' => array(
+        'options' => array('full-trim' => true),
         'input' => '',
         'output' => "0
 1
