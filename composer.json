@@ -1,7 +1,7 @@
 {
-  "name": "gobie/php_golf",
-  "description": "My tries on phpgolf challenges.",
-  "keywords": ["phpgolf"],
+  "name": "gobie/phpgolf",
+  "description": "phpGolf challenges with challenge runner",
+  "keywords": ["phpgolf", "challenge"],
   "license": "MIT",
   "authors": [
     {
