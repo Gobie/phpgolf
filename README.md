@@ -6,6 +6,7 @@ Some of my tries on PHP code golf challenges.
 - [Fibonacci](./challenges/fibonacci)
 - [Juggler Sequence](./challenges/juggler-sequence)
 - [LFSR](./challenges/lfsr)
+- [Minesweeper](./challenges/minesweeper)
 
 # Challenge runner
 
