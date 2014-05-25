@@ -1,0 +1,1 @@
+<?=preg_filter('/\w/e','chr((ord($0)-84)%26+97)',WORD);

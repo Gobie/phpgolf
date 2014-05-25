@@ -1,0 +1,1 @@
+<?=strtr(WORD,'abcdefghijklmnopqrstuvwxyz','nopqrstuvwxyzabcdefghijklm');

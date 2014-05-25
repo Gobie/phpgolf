@@ -1,0 +1,1 @@
+<?for($a=WORD;$c=$a[$i++];)echo chr(ord($c)+($c>m?-13:13));

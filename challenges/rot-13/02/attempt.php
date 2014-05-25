@@ -1,0 +1,1 @@
+<?=strtr(WORD,join(range(a,z)),join(range(n,z)).join(range(a,m)));
