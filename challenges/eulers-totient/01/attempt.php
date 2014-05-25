@@ -1,0 +1,1 @@
+<?for(;NUM>$i;$w+=$c==1,++$i)for($c=$i,$d=NUM;$d;$r=$c%$d,$c=$d,$d=$r);echo$w;

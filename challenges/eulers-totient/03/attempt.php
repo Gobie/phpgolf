@@ -1,0 +1,1 @@
+<?for(;NUM>$i+=!$d;){$d?:($c=$i)&&$d=NUM;$r=$c%$d;$o+=($c=$d)<2;$d=$r;}echo$o;
