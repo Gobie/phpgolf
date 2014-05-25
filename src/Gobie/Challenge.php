@@ -167,11 +167,11 @@ class Challenge
     private function indent($string, $numSpaces)
     {
         $spaces = str_repeat(' ', $numSpaces);
-        $lines = explode(PHP_EOL, $string);
+        $lines = explode("\n", $string);
         $indentedLines = array_map(function ($line) use ($spaces) {
             return $spaces . $line;
         }, $lines);
 
-        return implode(PHP_EOL, $indentedLines);
+        return implode("\n", $indentedLines);
     }
 }
