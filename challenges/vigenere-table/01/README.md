@@ -1,8 +1,8 @@
 # Size
-270 bytes
+48 bytes
 
 # Observation
-There is a lot of repeating chars, let's try RLE to compress it and use stored data + decompression as result.
+Render canvas 26*27 and each char at the end of line replace with newline, that looks like rotation.
 
 # Implementation
-I used RLE to compress data and wrote decompression algorithm for RLE.
+Iterate 26*27 lines*chars, each 27th char put newline instead of char.
