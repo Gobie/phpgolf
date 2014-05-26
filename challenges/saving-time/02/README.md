@@ -1,5 +1,5 @@
 # Size
-205 bytes
+230 bytes
 
 # Observation
 Let's try computation of the clock.
